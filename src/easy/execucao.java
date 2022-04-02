@@ -40,17 +40,26 @@ public class execucao {
     //                     + exercicio08.calcularSalarioLiquido(salario, impostoRenda, valorInss));
     // }
 
-    Exercicio09 exercicio09 = new Exercicio09();
-        int[] vetorTabuada = exercicio09.calcularTabuada(10);
-        exibirVetor(vetorTabuada);
-    }
+    // Exercicio09 exercicio09 = new Exercicio09();
+    //     int[] vetorTabuada = exercicio09.calcularTabuada(10);
+    //     exibirVetor(vetorTabuada);
+    // }
 
-    public static void exibirVetor(int[] vetorParaImprimir) {
-        int i = 0;
-        while (i < vetorParaImprimir.length) {
-            System.out.println(vetorParaImprimir[i]);
-            i++;
-        }
+    // public static void exibirVetor(int[] vetorParaImprimir) {
+    //     int i = 0;
+    //     while (i < vetorParaImprimir.length) {
+    //         System.out.println(vetorParaImprimir[i]);
+    //         i++;
+    //     }
+
+    Exercicio10 exercicio10 = new Exercicio10();
+        double valorInvestimento = 10000.00;
+        double taxaJuros = 0.05;
+        double valorJuros = exercicio10.calcularInvestimento(valorInvestimento, taxaJuros);
+        System.out.println("O Valor do Jusros será: R$" + valorJuros);
+        System.out.println("Você investiu: " + valorInvestimento);
+        System.out.println("O Valor total são : " + (valorInvestimento + valorJuros));
+
     }
 
 
