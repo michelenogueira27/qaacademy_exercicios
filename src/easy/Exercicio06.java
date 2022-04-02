@@ -3,29 +3,22 @@ package easy;
 import javax.swing.JOptionPane;
 
 public class Exercicio06 {
-    public static void main(String[] args) {
-        double nota1, nota2, media;
+    public String verificarAprovacao(double nota1, double nota2) {
 
-        String nota1Digitado = JOptionPane.showInputDialog("Digite a primeira nota");
-        String nota2Digitado = JOptionPane.showInputDialog("Digite a segunda nota");
-
-        nota1 = Double.parseDouble(nota1Digitado);
-        nota2 = Double.parseDouble(nota2Digitado);
-
+        double media;
         media = (nota1 + nota2) / 2;
 
         if (media > 5) {
-            System.out.println("Aprovado");
+            return "Aprovado";
         }
-
         if (media < 5) {
-            System.out.println("Reprovado");
-
+            return "Reprovado";
         }
+
         if (media == 5) {
-            System.out.println("Exame");
-
+            return "Exame";
         }
+        return "Não foi possivel calcular sua media";
 
     }
 
