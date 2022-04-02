@@ -3,18 +3,17 @@ package easy;
 import javax.swing.JOptionPane;
 
 public class Exercicio09 {
-    public static void main(String[] args) {
+    public int[] calcularTabuada(int numeroDigitado) {
 
-        int numero, i = 1;
-        String numeroDigitado = JOptionPane.showInputDialog("Digite um numero");
-        numero = Integer.parseInt(numeroDigitado);
-
+        int[] vetorTabuada = new int[10];
+        int i = 1;
         while (i <= 10) {
-            System.out.println(numero * i);
-            i = i + 1;
-
+            vetorTabuada[i-1] = numeroDigitado * i;
+            i++;
         }
-
+        return vetorTabuada;
     }
+
+
 
 }
