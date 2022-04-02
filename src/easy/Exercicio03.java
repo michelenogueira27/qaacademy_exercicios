@@ -2,15 +2,12 @@ package easy;
 
 import javax.swing.JOptionPane;
 
-public class Exercicio03{
-    public static void main(String[] args) {
-        int numero1;
-        int numero2;
-        numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
-        numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite um outro numero")); 
-        // Double.parseDouble(JOptionPane.showInputDialog("Digite um outro numero"));
-        System.out.println("O Valor do primeiro numero:"+numero2);
-        System.out.println("O Valor do segundo numero:"+numero1);
+public class Exercicio03 {
+    public String exibeValoresTrocados(int numero1, int numero2) {
+        return "O valor do primeiro numero é :" + numero2 + "\n"
+      
+        + "O valor do segundo numero é :" + numero1;
+
     }
 
 }
